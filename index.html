@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#d7f6ff">
   <link rel="icon" type="image/png" href="images/k-logo-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="images/k-logo-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="images/k-logo-96x96.png" sizes="96x96">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <link href="https://use.fontawesome.com/73b66035f0.css" media="all" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Gudea:400,700|Open+Sans:300,300i,400,600,700|Satisfy" rel="stylesheet">
   <title>Kaitlyn McGrath | Tutor</title>
 </head>
@@ -42,27 +43,29 @@
         achieve excellent marks on their SAT/ACT exams, or has fallen behind and is struggling to catch
         up, I have the knowledge, experience and passion to help them succeed."
       </h3>
-      <article class="attribute">
-        <i class="fa fa-lightbulb-o"></i>
-        <h2>Knowledge</h2>
-        <p>As a former teacher of several years, I have unique insight into exactly
-           what concepts and skills your student needs to master in order to succeed in any course.
-         </p>
-      </article>
-      <article class="attribute">
-        <i class="fa fa-pencil"></i>
-        <h2>Experience</h2>
-        <p>Having had the privilege of tutoring students of every skill level and learning style,
-          I have the ability to craft learning plans that are uniquely tailored to fit your child's exact needs.
-         </p>
-      </article>
-      <article class="attribute">
-        <i class="fa fa-heartbeat"></i>
-        <h2>Passion</h2>
-        <p>I am deeply driven to see your student achieve his or her learning goals precisely because it is my
-          genuine passion and joy to see them do so.
-         </p>
-      </article>
+      <div class="attribute-container">
+        <article class="attribute">
+          <i class="fa fa-lightbulb-o"></i>
+          <h2>Knowledge</h2>
+          <p>As a former teacher of several years, I have unique insight into exactly
+             what concepts and skills your student needs to master in order to succeed in any course.
+           </p>
+        </article>
+        <article class="attribute">
+          <i class="fa fa-pencil"></i>
+          <h2>Experience</h2>
+          <p>Having had the privilege of tutoring students of every skill level and learning style,
+            I have the ability to craft learning plans that are uniquely tailored to fit your child's exact needs.
+           </p>
+        </article>
+        <article class="attribute">
+          <i class="fa fa-heartbeat"></i>
+          <h2>Passion</h2>
+          <p>I am deeply driven to see your student achieve his or her learning goals precisely because it is my
+            genuine passion and joy to see them do so.
+           </p>
+        </article>
+      </div>
     </section>
     <section id="testimonies">
       <article>
@@ -76,7 +79,7 @@
         </article>
         <div class="l-divide"></div>
         <article>
-          <h3 class="testimony">"The improvements I have seen in the test performance of students in my classes
+          <h3 class="testimony">"The improvement I have seen in the test performance of students in my classes
             who are studying with Kaitlyn is phenomenal; they are more confident and disciplined when taking exams."
           </h3>
           <div class="client">
@@ -86,10 +89,10 @@
           </article>
       </article>
     </section>
-    <section id="contact-form">
-      <h1>I'd love to hear from you!</h1>
+    <section id="contact-form" tabindex="-1">
+      <h1 id="form-header" tabindex="-1">I'd love to hear from you!</h1>
       <h3>After you introduce yourself and share some information with me about your student, I'll get in touch with you to
-          schedule a time to chat. You should expect to hear from me within a day.
+          schedule a time to chat. You should expect to hear from me within one business day.
       </h3>
       <div class="form-container">
         <form accept-charset="UTF-8" action="#" method="POST">
@@ -106,7 +109,7 @@
               <input id="phone" type="text" name="phone" placeholder="Phone number">
             </div>
             <div class="six">
-              <input id="student-name" type="text" name="name" placeholder="Student's Name *" required="">
+              <input id="student-name" type="text" name="name" placeholder="Student's name *" required="">
             </div>
           </div>
           <div class="row">
@@ -120,6 +123,6 @@
       <p class="form-text">Required *</p>
     </section
   </main>
-  <script src="js/app.js"></script>
+  <script src="js/app.min.js"></script>
 </body>
 </html>
